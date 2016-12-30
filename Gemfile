@@ -22,3 +22,6 @@ end
 
 gem 'streamio-ffmpeg'
 gem 'simple_form'
+gem 'rest-client'
+gem 'delayed_job_active_record'
+
