@@ -1,6 +1,8 @@
 class CreateConversions < ActiveRecord::Migration[5.0]
   def change
-    create_table :conversions do |t|
+    enable_extension 'uuid-ossp'
+
+    create_table :conversions, id: :uuid do |t|
       t.string :audio_url
       t.string :image_url
       t.string :email
