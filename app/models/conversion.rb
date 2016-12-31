@@ -66,11 +66,7 @@ class Conversion < ApplicationRecord
   end
 
   def download(url, file_path)
-    File.open(file_path, "wb") do |saved_file|
-      open(url, "rb") do |read_file|
-        saved_file.write(read_file.read)
-      end
-    end
+    `curl -L #{url} -o #{file_path}`
   end
 
   def clean
