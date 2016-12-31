@@ -1,12 +1,14 @@
 require 'open-uri'
 
 class Conversion < ApplicationRecord
+  validates :audio_url, :image_url, :email, presence: true
+
   attr_accessor :audio_input_path, :image_input_path, :movie_output_path
 
   enum status: [:pending, :uploaded, :notified]
 
   def convert!
-    @movie_output_path = audio_input_path.to_s + ".mp4"
+    @movie_output_path = id.to_s + ".mp4"
     transcode!
     upload!
     notify!
