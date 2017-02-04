@@ -1,3 +1,0 @@
-[submodule "app/assets/shared"]
-	path = app/assets/shared
-	url = git@github.com:dukex/megafono-assets.git
