@@ -136,3 +136,4 @@ gem 'flipper'
 gem 'flipper-active_record'
 gem 'flipper-ui'
 
+gem 'postmark-rails'
