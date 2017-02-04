@@ -1,0 +1,35 @@
+.modal
+  padding: 20px
+  position: relative
+
+  &--hidden
+    display: none
+
+  &--full
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    background: rgba(0, 0, 0, .95)
+    position: absolute
+    color: #FFF
+
+  &__close
+    top: 10px
+    right: 10px
+    position: absolute
+    background: #FFF image-url('essential/lineal/multiply.svg') center center no-repeat
+    background-size: 15px
+    padding: 15px
+    height: 20px
+    width: 20px
+    border-radius: 20px
+    text-indent: -9000px
+
+
+  &--share
+    padding: 30px 20px
+    input
+      color: $base-font-color
+      width: 100%
+      padding: 10px

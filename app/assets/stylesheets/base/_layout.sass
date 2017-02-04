@@ -1,0 +1,41 @@
+html
+  box-sizing: border-box
+
+*,
+*::before,
+*::after
+  box-sizing: inherit
+
+html, body
+  background: $body-background-color
+  height: 100%
+
+body
+  overflow-y: scroll
+
+.wrapper
+  +outer-container
+  &--margin
+    +media($mobile)
+      padding: 0 10px
+
+a
+  color: $link-color
+  transition: color $base-duration $base-timing
+
+  &:active, &:focus, &:hover
+    color: shade($link-color, 25%)
+
+trix-editor
+  min-height: 100px
+
+figure
+  margin: 0
+
+img, picture
+  margin: 0
+  max-width: 100%
+
+blockquote
+  margin: 0
+  padding: 0

@@ -1,0 +1,207 @@
+body.channels-show, body.facebook-channels, body.episodes-show, body.facebook-episodes-show
+  max-width: 700px
+  margin: 0 auto
+  padding: 10px
+
+  .copyright
+    +media($mobile)
+      +span-columns(4)
+      +omega
+      text-align: center
+
+  .made-by-megafono
+    +media($mobile)
+      +span-columns(4)
+      +omega
+      text-align: center
+      font-size: 13px
+      margin-top: 10px
+
+    span
+      color: $accent-color
+
+.channel
+  &__image
+    margin-top: 20px
+    border-radius: $base-border-radius
+
+    +media($mobile)
+      +span-columns(4)
+
+    +media($tablet)
+      +span-columns(2)
+
+  &__name
+    font-family: $header-font-family
+
+    +media($mobile)
+      +span-columns(4)
+      margin-bottom: 0
+      margin-top: 10px
+      text-align: center
+
+    +media($tablet)
+      +span-columns(6)
+      +omega
+      font-size: 40px
+      margin-top: 20px
+      text-align: left
+
+  &__body
+    +media($mobile)
+      +span-columns(4)
+      margin-top: 20px
+      text-align: left
+
+    +media($tablet)
+      +span-columns(6)
+      +omega
+      margin-top: 10px
+
+  &__categories
+    font-style: italic
+    margin-top: 10px
+
+  &__episodes
+    +media($mobile)
+      +span-columns(4)
+      +omega
+      margin-top: 25px
+      padding-top: 25px
+      border-top: 1px solid $base-border-color
+
+  &__episode
+    padding-bottom: 20px
+    border-bottom: 1px dashed $base-font-color
+    margin-bottom: 20px
+
+    +media($mobile)
+      +span-columns(4)
+
+  &__subscribe
+    background: lighten($action-color, 15%)
+    margin: 10px 0
+    padding: 0 10px
+    border-radius: $base-border-radius
+
+    +media($mobile)
+      +span-columns(4)
+      +omega
+
+    +media($tablet)
+      +span-columns(8)
+      +omega
+
+  &__subscribe-link
+    +media($mobile)
+      +span-columns(4)
+      padding: 5px 0
+
+    +media($tablet)
+      float: none
+      margin: 0 7px
+      width: auto
+      display: inline-block
+
+  &__rss-link
+    &::before
+      content: " "
+      display: block
+      width: 12px
+      height: 12px
+      background: image-url('rss.png')
+      float: left
+      margin: 7px
+
+  &__back
+    margin-bottom: $small-spacing
+    +media($mobile)
+      +span-columns(4)
+
+  &--minimal
+    border-bottom: 1px solid $base-border-color
+    overflow: hidden
+    margin-bottom: 20px
+    padding-bottom: 10px
+
+    .channel__image
+      +media($mobile)
+        +span-columns(2)
+
+      +media($tablet)
+        +span-columns(2)
+
+    .channel__name
+      margin-top: 20px
+      text-align: left
+      +media($mobile)
+        +span-columns(2)
+        +omega
+      +media($tablet)
+        +span-columns(6)
+        +omega
+
+    .channel__subscribe
+      +media($mobile)
+        +span-columns(2)
+        +omega
+      +media($tablet)
+        +span-columns(12)
+
+    .channel__body
+      display: none
+      +media($tablet)
+        display: block
+
+  &--only-subscription
+    .channel__body, .channel__name, .channel__image, .channel__categories
+      display: none
+
+.channel-episode--minimal
+  +clearfix
+  border-bottom: 1px solid $base-font-color
+  margin-bottom: 20px
+  padding-bottom: 20px
+
+  .episode__title
+    margin-top: 10px
+    margin-bottom: 10px
+    font-size: modular-scale(3)
+
+    +media($mobile)
+      +span-columns(4)
+      font-weight: 700
+
+  .episode__published_at
+    +media($mobile)
+      +span-columns(4)
+      font-weight: 500
+      font-size: 14px
+
+    +media($tablet)
+      +span-columns(8)
+
+.episode
+  &__title
+    font-weight: 700
+
+  &__body
+    +media($mobile)
+      +span-columns(4)
+      margin-top: 10px
+
+  &__audio
+    +media($mobile)
+      +span-columns(4)
+      margin-top: 10px
+
+  &__download
+    margin-top: 10px
+    color: $base-font-color
+    text-align: center
+
+    +media($mobile)
+      +span-columns(4)
+
+    +media($tablet)
+      +span-columns(8)

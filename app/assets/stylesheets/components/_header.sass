@@ -1,0 +1,76 @@
+@import "bourbon"
+
+$logo-default-width: 160px
+$logo-default-height: 60px
+
+.header
+  +clearfix
+  .header__logo-text
+    padding: 0
+    margin: 0
+    display: inline-block
+    &::before
+      content: " "
+      background-repeat: no-repeat
+      background-position: center top
+      background-image: image-url("megafono.svg")
+      background-size: auto 90px
+      display: block
+      float: left
+      width: $logo-default-width
+      height: $logo-default-height
+    a
+      display: block
+      text-indent: -10000px
+
+  &.header--center
+    text-align: center
+
+  &.header--medium-size
+    .header__logo-text
+      &::before
+        width: $logo-default-width * 1.5
+        height: $logo-default-height * 1.5
+  &.header--large-size
+    .header__logo-text
+      &::before
+        width: $logo-default-width * 2
+        height: $logo-default-height * 2
+
+  &.header--without-text
+    .header__logo-text
+      &::before
+        height: $logo-default-height - 16px
+    &.header--medium-size .header__logo-text
+      &::before
+        height: ($logo-default-height * 1.5) - 25px
+    &.header--large-size .header__logo-text
+      &::before
+        height: ($logo-default-height * 2) - 30px
+
+  &.header--homepage
+    @extend .header--dark
+    @extend .header--without-text
+    @extend .header--medium-size
+    +media($tablet)
+      height: ($logo-default-height * 1.5) - 50px
+      margin-bottom: 78px
+      .header__logo-text
+        &::before
+          width: $logo-default-width * 1.5
+          height: $logo-default-height * 1.5
+
+  &.header--dark
+    background: $dark-background-color
+
+  .header__title
+    font-size: 25px
+    float: left
+    margin: 0
+    padding: 0 10px
+    a
+      color: #FFF
+      line-height: 60px
+      text-decoration: none
+      font-weight: 700
+

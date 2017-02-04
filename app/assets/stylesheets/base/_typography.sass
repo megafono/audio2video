@@ -1,0 +1,51 @@
+$base-font-family: 'Open Sans'
+$heading-font-family: $base-font-family
+$header-font-family: 'Libre Baskerville'
+$base-font-size: 1em
+$hint-font-size: .8em
+$base-line-height: 1.5
+$heading-line-height: 1.2
+
+$base-border-radius: 5px
+$base-spacing: $base-line-height * 1em
+$small-spacing: $base-spacing / 2
+
+// // Animations
+$base-duration: 150ms
+$base-timing: ease
+
+// Border
+$base-border: 1px solid $base-border-color
+
+$base-box-shadow: 0 1px 2px $base-border-color
+
+// Forms
+$form-box-shadow: $base-box-shadow
+$form-input-box-shadow: inset 0 1px 3px $shadow-color
+$form-input-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($action-color, $lightness: -5%, $alpha: -.3)
+
+body
+  color: $base-font-color
+  font-family: $base-font-family
+  font-size: $base-font-size
+  font-weight: 400
+  line-height: $base-line-height
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+  font-family: $heading-font-family
+  font-size: modular-scale(1)
+  font-weight: 400
+  line-height: $heading-line-height
+  margin: 0 0 $small-spacing
+
+p
+  margin: 0
+
+.line-through
+  text-decoration: line-through
+

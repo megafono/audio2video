@@ -1,0 +1,94 @@
+.graph
+  margin-bottom: 20px
+  display: block
+  padding: 0
+  text-decoration: none
+  color: $base-font-color
+
+  &__link
+    display: block
+    text-align: center
+    color: $link-color
+    text-decoration: underline
+    font-weight: 700
+
+
+.graph--blue
+  background: #AED6F1
+  box-shadow: 1px 1px 1px darken(#AED6F1, 20%)
+
+.graph--green
+  background: #ABEBC6
+  box-shadow: 1px 1px 1px darken(#ABEBC6, 20%)
+
+.graph--purple
+  background: #D7BDE2
+  box-shadow: 1px 1px 1px darken(#D7BDE2, 20%)
+
+.graph--yellow
+  background: #F9E79F
+  box-shadow: 1px 1px 1px darken(#F9E79F, 20%)
+
+.graph--line, .graph--pie
+  margin-bottom: $small-spacing * 3
+  .graph__title
+    display: block
+    line-height: 29px
+    text-align: center
+
+.graph--pie
+
+.graph--counter
+  border-radius: $base-border-radius
+  padding: 10px 15px
+
+  +media($mobile)
+    +span-columns(4)
+
+  +media($tablet-only)
+    +span-columns(4)
+    +omega(3n)
+
+  +media($desktop)
+    +span-columns(3)
+
+  &::before // icon
+    float: left
+    display: block
+    margin: 0
+    margin-right: 10px
+
+  .graph__data
+    display: block
+    padding: 0
+    line-height: 1
+    font-weight: 700
+    font-size: 50px
+    text-align: center
+    clear: both
+    text-align: left
+
+  .graph__title
+    display: block
+    line-height: 29px
+
+  &.graph--small
+    overflow: hidden
+    text-align: center
+    margin-bottom: 0
+    margin-top: 5px
+    +media($mobile)
+      +span-columns(2)
+
+    .graph__data
+      font-size: 25px
+      text-align: center
+      margin-top: 5px
+
+    .graph__title
+      line-height: 1.5
+      text-align: center
+      font-size: 15px
+
+.graph_link--hidden
+  visibility: hidden

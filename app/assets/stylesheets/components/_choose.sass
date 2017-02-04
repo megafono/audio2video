@@ -1,0 +1,52 @@
+.choose
+  +clearfix
+  margin: 20px 0
+  &__option
+    padding: 20px
+    background: $body-background-color
+    border: $base-border
+    box-radius: $base-border-radius
+    box-shadow: $base-box-shadow
+    display: block
+
+    +media($mobile)
+      +span-columns(4)
+      margin-top: 20px
+
+  &--three-items &__option
+    +media($tablet)
+      +span-columns(8/3)
+
+    &:last-of-type
+      +omega
+
+  &--two-items &__option
+    +media($tablet)
+      +span-columns(4)
+
+    &:last-of-type
+      +omega
+
+  .choose__radio
+    text-align: center
+    display: block
+    margin: 0 auto
+    margin-bottom: $small-spacing
+    border: 1px solid red
+
+  .form__label
+    display: block
+    text-align: center
+
+  &__tip
+    font-size: 12px
+    display: block
+    margin-top: 10px
+
+  &__disclaimer
+    margin-top: 10px
+    font-style: italic
+    font-size: 15px
+    +media($mobile)
+      +span-columns(4)
+      color: $error-color

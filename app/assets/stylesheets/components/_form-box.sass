@@ -1,0 +1,50 @@
+.form-box
+  margin: 30px 0 0 0
+
+  +media($desktop)
+    +span-columns(8)
+    +shift(2)
+
+  &--small
+    +media($mobile)
+      +span-columns(4)
+
+    +media($tablet)
+      +span-columns(5)
+      +shift(1.5)
+
+    +media($desktop)
+      +span-columns(6)
+      +shift(3)
+
+  &__title
+    margin: 20px 0 15px
+    font-weight: 700
+    text-align: center
+
+  &__body
+    text-align: center
+    margin-bottom: 25px
+
+  &__alternative-link
+    +media($mobile)
+      +span-columns(4)
+      +omega
+      text-align: center
+      margin-top: 10px
+
+    +media($tablet)
+      +span-columns(3)
+      text-align: left
+
+  &__footer
+    margin-top: 20px
+    font-size: em(14px)
+    display: block
+    &--small
+      +media($mobile)
+        +span-columns(4)
+        margin-top: 10px
+        font-size: em(13px)
+        font-style: italic
+

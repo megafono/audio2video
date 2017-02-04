@@ -1,0 +1,52 @@
+.share
+  line-height: 32px
+  display: block
+  color: $base-font-color
+  font-size: em(13px)
+  font-weight: 700
+  &::before
+    content: ' '
+    display: inline-block
+    width: 25px
+    height: 25px
+    background-size: 25px
+    margin: 2px
+    margin-right: 5px
+    float: left
+
+  &--download
+    +media($tablet)
+      float: right
+    &::before
+      background: transparent image-url('essential/lineal/download.svg') center center no-repeat
+
+
+  &--share-button
+    @extend .btn--link
+    +media($tablet)
+      float: left
+    &::before
+      background: transparent image-url('essential/lineal/share.svg') center center no-repeat
+
+  &__buttons
+    list-style: none
+    padding: 0
+
+    li
+      display: inline
+
+    .sr-only
+      position: absolute
+      clip: rect(1px 1px 1px 1px)
+      clip: rect(1px, 1px, 1px, 1px)
+      padding: 0
+      border: 0
+      height: 1px
+      width: 1px
+      overflow: hidden
+
+    a
+      text-decoration: none
+
+    img
+      width: 32px

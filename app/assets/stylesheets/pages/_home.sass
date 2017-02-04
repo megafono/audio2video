@@ -1,0 +1,152 @@
+.page-home
+  &__slogan
+    font-family: $base-font-family
+    font-weight: 700
+    margin: 0
+    line-height: 1.5
+    text-align: center
+    margin-top: em(4px)
+
+    +media($mobile)
+      font-size: em(44px)
+
+    +media($tablet)
+      font-size: em(60px)
+      margin-top: em(10px)
+      br
+        display: none
+    +media($desktop)
+      font-size: em(70px)
+
+  &__mission
+    font-family: $header-font-family
+    font-weight: 300
+    font-size: 23px
+    text-align: center
+    line-height: 1.5
+
+    +media($mobile)
+      margin-top: 10px
+
+    +media($tablet)
+      margin-top: 20px
+      +span-columns(7)
+      +shift(0.5)
+
+    +media($desktop)
+      font-size: em(38px)
+      +span-columns(10)
+      +shift(1)
+
+  &__call-to-action
+    margin-top: 20px
+
+    +media($tablet)
+      +span-columns(4)
+      +shift(2)
+
+    +media($desktop)
+      +span-columns(4)
+      +shift(4)
+
+  &__sign-in
+    +media($mobile)
+      +span-columns(4)
+    display: block
+    text-align: center
+    margin-top: 10px
+
+  &__stats
+    text-align: center
+    margin-top: $small-spacing
+    +media($mobile)
+      +span-columns(4)
+
+  &__quotes
+    font-family: $header-font-family
+    font-weight: 400
+    padding-top: 40px
+    +media($mobile)
+      +span-columns(4)
+      font-size: em(20px)
+    +media($tablet)
+      +span-columns(6)
+      +shift(1)
+    blockquote
+      background: #FFF
+      margin-top: 20px
+      padding: 10px
+      border-radius: 0 20px 20px 20px
+    cite
+      font-weight: 700
+      font-style: normal
+      font-family: $base-font-family
+      margin-top: 10px
+      display: block
+      +media($mobile)
+        font-size: em(15px)
+
+
+
+  &__features
+    margin-top: 50px
+    padding: 0
+    padding-top: 40px
+
+    +media($mobile)
+      +span-columns(4 of 4)
+
+  &__feature
+    margin-bottom: 45px
+    padding: 0 30px
+    +media($mobile)
+      +span-columns(4 of 4)
+
+    +media($tablet)
+      +span-columns(4 of 8)
+
+    +media($tablet-only)
+      +omega(2n)
+
+    +media($desktop)
+      +span-columns(4 of 12)
+      +omega(3n)
+
+  &__feature-wrapper
+    display: flex
+    justify-content: space-around
+    flex-flow: row nowrap
+    +media($mobile)
+      flex-flow: wrap
+
+  &__feature-itunes &__feature-icon
+    background: image-url('essential/lineal/music-player-1.svg') no-repeat center
+
+  &__feature-website &__feature-icon
+    background: image-url('essential/lineal/worldwide.svg') no-repeat center
+
+  &__feature-schedule &__feature-icon
+    background: image-url('essential/lineal/calendar.svg') no-repeat center
+
+  &__feature-unlimited &__feature-icon
+    background: image-url('essential/lineal/database.svg') no-repeat center
+
+  &__feature-analytics &__feature-icon
+    background: image-url('essential/lineal/network.svg') no-repeat center
+
+  &__feature-embedded &__feature-icon
+    background: image-url('essential/lineal/video-player-2.svg') no-repeat center
+
+
+  &__feature-content
+    h4
+      text-align: center
+      font-weight: 600
+
+    p
+      line-height: 2
+
+  &__feature-icon
+    height: 80px
+    width: 80px
+    margin-bottom: 20px

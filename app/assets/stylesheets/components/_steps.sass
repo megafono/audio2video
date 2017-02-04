@@ -1,0 +1,39 @@
+.steps
+  margin-top: $small-spacing
+  .step
+    padding: 10px
+
+    &--completed
+      .step__title
+        text-decoration: line-through
+        color: #6CB58C
+
+        &::before
+          background: #6CB58C
+          color: #FFF
+
+      .step__summary
+        text-decoration: none
+
+    &__header
+      overflow: hidden
+
+    &__title, &__summary
+      font-family: $base-font-family
+      margin: 0
+      line-height: 30px
+      float: left
+
+    &__summary
+      color: $neutral-color
+      margin-left: 10px
+      font-style: italic
+
+    &__description
+      margin-bottom: $small-spacing
+      font-family: $base-font-family
+      font-size: modular-scale(1) * 0.65
+
+  img
+    width: 30px
+

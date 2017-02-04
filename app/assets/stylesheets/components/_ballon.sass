@@ -1,0 +1,23 @@
+.ballon--up, .ballon--right
+  position: relative
+  &:before
+    content: " "
+    position: absolute
+    border: solid transparent
+    height: 0
+    width: 0
+    pointer-events: none
+    border-width: 20px
+    margin-left: -20px
+
+.ballon--up
+  &::before
+    bottom: 100%
+    left: 50%
+    border-bottom-color: $base-background-color
+
+.ballon--right
+  &::before
+    top: 20px
+    right:  100%
+    border-right-color: $base-background-color
