@@ -9,7 +9,7 @@ $logo-default-height: 60px
     padding: 0
     margin: 0
     display: inline-block
-    &::before
+    a::before
       content: " "
       background-repeat: no-repeat
       background-position: center top
@@ -22,30 +22,31 @@ $logo-default-height: 60px
     a
       display: block
       text-indent: -10000px
+      +clearfix
 
   &.header--center
     text-align: center
 
   &.header--medium-size
     .header__logo-text
-      &::before
+      a::before
         width: $logo-default-width * 1.5
         height: $logo-default-height * 1.5
   &.header--large-size
     .header__logo-text
-      &::before
+      a::before
         width: $logo-default-width * 2
         height: $logo-default-height * 2
 
   &.header--without-text
     .header__logo-text
-      &::before
+      a::before
         height: $logo-default-height - 16px
     &.header--medium-size .header__logo-text
-      &::before
+      a::before
         height: ($logo-default-height * 1.5) - 25px
     &.header--large-size .header__logo-text
-      &::before
+      a::before
         height: ($logo-default-height * 2) - 30px
 
   &.header--homepage
@@ -56,7 +57,7 @@ $logo-default-height: 60px
       height: ($logo-default-height * 1.5) - 50px
       margin-bottom: 78px
       .header__logo-text
-        &::before
+        a::before
           width: $logo-default-width * 1.5
           height: $logo-default-height * 1.5
 
