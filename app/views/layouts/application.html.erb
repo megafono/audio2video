@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>M2video</title>
+    <title>Megafono - Podcast to Video</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -9,6 +9,13 @@
   </head>
 
   <body>
-    <%= yield %>
+    <header class="header header--homepage header--center">
+      <div class="wrapper">
+        <h1 class="header__logo-text"><a href="/">Megafono</a> </h1>
+      </div>
+    </header>
+    <div class="wrapper wrapper--margin">
+      <%= yield %>
+    </div>
   </body>
 </html>
