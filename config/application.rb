@@ -11,6 +11,9 @@ module M2video
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
+    config.i18n.available_locales = [:pt, :en, :es]
+    config.i18n.default_locale = :pt
+
     config.active_job.queue_adapter = :delayed_job
     config.assets.paths << "#{Rails.root}/app/assets/shared/stylesheets"
     config.assets.paths << "#{Rails.root}/app/assets/shared/javascripts"

@@ -1,0 +1,78 @@
+pt:
+  simple_form:
+    "yes": 'Sim'
+    "no": 'Não'
+    required:
+      text: 'obrigatório'
+      mark: ' '
+      html: '<abbr title="required"></abbr>'
+    error_notification:
+      default_message: "Por favor veja os erros abaixos:"
+    labels:
+      conversion:
+        audio_url: 'URL do audio'
+        image_url: 'URL da imagem'
+      customer:
+        address: "Endereço"
+        address_country: "Pais"
+        address_zipcode: "CEP"
+        birthdate: "Date de aniversario"
+        full_name: "Nome Completo"
+        national_number: "CPF"
+        phone: "Telefone"
+        email: "Email de Cobrança"
+
+      channel:
+        name: "Qual será o novo nome do seu podcast?"
+        body: 'Conte um pouco sobre seu podcast'
+        artwork: 'Arte do seu podcast'
+        language: 'Qual a lingua principal do canal?'
+        subtitle: 'Resumo do canal'
+        categories: 'Categorias'
+        rating: 'Classificação'
+        new:
+          name: 'Qual é o nome do seu podcast?'
+        users:
+          name: 'Como você prefere ser chamado?'
+          email: "Qual email podemos entrar em contato?"
+        new_feed_url: 'URL do Feed Novo'
+        slug: 'Sua URL no Megafono'
+
+      episode:
+        title: 'Titulo do episódio'
+        subtitle: 'Resumo do episódio'
+        media_uploaded: 'Arquivo de audio'
+        body: 'Show notes'
+        published_at: 'Data de publicação'
+        rating: 'Classificação'
+        duration: 'Duração do episódio'
+        media_length: 'Tamanho do arquivo'
+        artwork: 'Arte do seu episódio'
+
+      defaults:
+        password: 'Senha'
+        password_confirmation: 'Confirme a senha'
+
+    hints:
+      conversion:
+        audio_url: 'Caso não tenha a URL do audio você pode subir ele gratuitamente em <a href="http://file.io">file.io</a> '
+        image_url: 'Caso não tenha a URL da imagem você pode subir ele gratuitamente em <a href="http://file.io">file.io</a>'
+      defaults:
+        email: 'Fica tranquilo, não enviaremos spam!'
+      channel:
+        name: 'Apesar de tentador, evite usar "cast" no nome do seu canal'
+        body: '<strong>Seu texto tem <span class="js-text-counter" data-target="trix-editor">0</span> caracteres(contando a formatação)</strong>, sinta-se livre, um texto de 2000 caracteres seria muito bom, mas não ultrapasse os 4000 caracteres.'
+        subtitle: 'Seja breve e direto nesse campo, ele ira aparecer primeiro para seus futuros ouvintes na maioria dos agregadores, por exemplo na iTunes Store'
+        language: 'Usted habla español? English? Ou é aquele portugues com sotaque bem arrastado?'
+        copyright: 'Quem tem os direitos do seu podcast? normalmente segue o padrão: <br/> [ano de inicio]-[ano atual] &copy; [seu nome] Todos os Direitos reservados'
+        artwork: 'A imagem deve ter no minimo 1400x1400 pixels e no máximo 3000x3000 pixels, ser um PNG ou JPEG, com 72 dpi'
+        new_feed_url: 'Certifique-se de que que essa URL aponta para o Feed RSS XML'
+        slug: 'Fique tranquilo! Ao trocar sua URL, todos os links antigo continuam funcionando, mas não esqueça de pedir para o seus ouvintes para assinar seu canal na nova URL.'
+      episode:
+        title: 'Seja impactante! seja lendário! Seus ouvintes irão usar o titulo do podcast para falar sobre ele'
+        body: 'O Show notes é onde você fala sobre os assuntos que rolaram no seu episódio, coloca links de referencias, agradece os ouvintes fieis, etc, sinta-se livre, <strong>Seu texto tem <span class="js-text-counter" data-target="trix-editor">0</span> caracteres(contando a formatação)</strong>, um texto de 2000 caracteres seria muito bom, mas não ultrapasse os 4000 caracteres.'
+        subtitle: 'Seja breve e direto nesse campo, ele ira aparecer primeiro para seus ouvintes na maioria dos agregadores, por exemplo na iTunes Store'
+        published_at: 'Você pode agendar a publicação do seu episódio colocando uma data no futuro, seu episódio só ira aparecer após essa data'
+        duration: '<strong>Em segundos</strong>, mas não se preocupe, envie o audio e vamos calcular a duração para você, essa informação é importante para seu podcast aparecer no itunes'
+        media_length: '<strong>Em bytes</strong>, assim como a duração do episódio, vamos calcular para você'
+        artwork: 'A imagem deve ter no minimo 1400x1400 pixels e no máximo 3000x3000 pixels, ser um PNG ou JPEG, com 72 dpi. Caso não tenha uma arte, não se preocupe, a arte do seu canal será usada.'
