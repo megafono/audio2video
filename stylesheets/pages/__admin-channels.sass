@@ -1,0 +1,165 @@
+body.admin-channels-steps, .admin-channels-update_steps
+  .container
+    +media($mobile)
+      +span-columns(4)
+
+    +media($tablet)
+      +span-columns(6)
+      +shift(1)
+
+  .channel-name
+    text-align: center
+    font-family: $header-font-family
+    margin: 0
+    padding: 15px 0
+    font-weight: 600
+
+    +media($mobile)
+      line-height: 1.5
+      font-size: 18px
+      +clearfix
+
+  .podcast-publisher
+    display: block
+    margin: 10px auto
+
+    +media($tablet)
+      +span-columns(6)
+      +shift(1)
+
+    +media($desktop)
+      +span-columns(6)
+      +shift(3)
+
+    +media($xxdesktop)
+      +span-columns(4)
+      +shift(4)
+
+  .congratulations
+    margin: 15px 0
+    font-family: $header-font-family
+    font-weight: 400
+    font-size: 16px
+
+  .itunes-disclamier
+    font-size: 12px
+    font-style: italic
+
+  .channel-board
+    margin-top: 30px
+
+  .channel-board__image
+    +span-columns(1)
+    height: auto
+    display: block
+    border-radius: 100px
+    box-shadow: 0 1px 2px #333
+    margin-bottom: 20px
+
+  .channel-board__body
+    +span-columns(11)
+
+body.admin-channels-show
+.dashboard
+  @extend .form--with-border
+  margin-top: 15px
+  +media($mobile)
+    +span-columns(4)
+
+.dashboard-topbar
+  margin-top: 20px
+  +media($mobile)
+    +span-columns(4)
+
+.dashboard-topbar__image
+  +media($mobile)
+    +span-columns(2)
+    +shift(1)
+
+  +media($tablet)
+    +span-columns(1 of 8)
+    +shift(0)
+
+  +media($desktop)
+    +span-columns(1 of 12)
+    margin-bottom: 10px
+
+  img
+    border-radius: 100px
+    box-shadow: 1px 1px 1px #333
+
+.dashboard-topbar__title
+  font-weight: 400
+  margin-top: 5px
+  text-align: center
+  +media($tablet)
+    text-align: left
+    margin-bottom: 0
+
+.dashboard-topbar__url
+  font-size: 14px
+
+.dashboard-topbar__title, .dashboard-topbar__url, .dashboard-topbar__links
+  +media($mobile)
+    +span-columns(4)
+
+  +media($tablet)
+    +span-columns(7 of 8)
+    +omega
+
+  +media($desktop)
+    +span-columns(11 of 12)
+    +omega
+
+.dashboard-topbar__links
+  overflow: hidden
+  li a
+
+
+  .btn
+    padding: $small-spacing/2
+    margin-bottom: 10px
+    +media($tablet)
+      margin-right: 10px
+
+.dashboard__graphs
+  overflow: hidden
+
+.dashboard__episodes
+  +media($mobile)
+    +span-columns(4 of 4)
+    +omega
+
+.dashboard__episode-graphs
+  overflow: hidden
+
+
+.dashboard__episode
+  border-top: 1px solid $light-gray
+  padding: 20px 0
+  +media($mobile)
+    +span-columns(4 of 4)
+    +omega
+
+.dashboard__episode-title
+  color: $base-font-color
+  margin: 0
+  a
+    color: $link-color
+
+.dashboard__episode-actions
+  +media($mobile)
+    +span-columns(4)
+  a
+    //margin: 0 20px 0 0
+    text-decoration: none
+    &::before
+      margin: 0 10px 0 0
+  a
+    +media($mobile)
+      +span-columns(4 of 4)
+
+    +media($tablet)
+      +span-columns(2.66 of 8)
+      text-align: center
+

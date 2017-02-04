@@ -1,0 +1,109 @@
+.episodes-embed
+  height: auto
+
+.player-embed
+  @include outer-container
+  margin-bottom: 10px
+  margin-top: 10px
+  padding: 0 10px
+
+  &__artwork
+    @include media($mobile)
+      @include span-columns(2 of 4)
+
+    @include media($tablet)
+      @include span-columns(2 of 8)
+
+    @include media($desktop)
+      @include span-columns(2 of 12)
+
+  &__share-box
+    @include media($mobile)
+      @include span-columns(2 of 2)
+      @include omega
+
+  &__content
+    @include media($mobile)
+      @include omega
+      @include span-columns(2 of 4)
+
+    @include media($tablet)
+      @include span-columns(6 of 8)
+
+    @include media($desktop)
+      @include span-columns(10 of 12)
+
+  &__metadata
+    @include media($mobile)
+      @include span-columns(2 of 2)
+      @include omega
+
+  &__controls
+    margin-top: 10px
+    @include media($mobile)
+      @include span-columns(2 of 2)
+      @include omega
+
+  &__visualzation
+    background-color: #bebebe
+    height: 10px
+    margin-top: 10px
+    position: relative
+
+    @include media($mobile)
+      @include span-columns(2 of 2)
+      @include omega
+
+  &__current-time
+    font-size: em(12px)
+    margin-top: 5px
+    text-align: center
+
+    @include media($mobile)
+      @include omega
+      @include span-columns(2 of 2)
+
+  &__title
+    font-size: em(14px)
+    font-weight: 700
+    line-height: 1
+    margin: 0
+    white-space: nowrap
+    overflow: hidden
+    text-overflow: ellipsis
+    padding-bottom: 5px
+
+  &__channel
+    color: #a5a5a5
+    font-size: em(11px)
+    font-weight: 400
+    margin: 0
+
+    span
+      color: #656565
+
+  &__visualzation-status, &__visualzation-loaded
+    background-color: #676261
+    height: 10px
+    width: 0
+    position: absolute
+
+  &__visualzation-loaded
+    background-color: #9c9696
+
+  .player__play-pause
+    background-repeat: no-repeat
+    background-size: 100%
+    cursor: pointer
+    margin: auto
+    height: 40px
+    width: 40px
+
+  .player__play-pause--paused
+    background-image: image-url('essential/fill/play-button-1.svg')
+
+  .player__play-pause--playing
+    background-image: image-url('essential/fill/pause-1.svg')
+
+
+

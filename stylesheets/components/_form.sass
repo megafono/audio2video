@@ -1,0 +1,115 @@
+.form
+  +clearfix
+
+  &--margin
+    margin-bottom: 20px
+
+  &__label
+    display: block
+    font-weight: 600
+    margin-bottom: $small-spacing / 2
+
+  &__input:not(select)
+    display: block
+    font-family: $base-font-family
+    font-size: $base-font-size
+    appearance: none
+    border: $base-border
+    border-radius: $base-border-radius
+    box-shadow: $form-input-box-shadow
+    box-sizing: border-box
+    padding: $base-spacing / 3
+    transition: border-color $base-duration $base-timing
+    width: 100%
+
+    &:hover
+      border-color: shade($base-border-color, 20%)
+
+
+    &:focus
+      border-color: $action-color
+      box-shadow: $form-input-box-shadow-focus
+      outline: none
+
+    &:disabled, &.disabled
+      background-color: shade($base-background-color, 5%)
+      cursor: not-allowed
+
+      &:hover
+        border: $base-border
+
+    &::placeholder
+      color: tint($base-font-color, 40%)
+
+  .form__input--inline
+    display: inline
+
+  // textarea
+  //   resize: vertical
+  //
+
+
+  [type="checkbox"],
+  [type="radio"]
+    display: inline
+    margin-right: $small-spacing / 2
+    width: auto
+
+  [type="radio"]
+    appearance: radio
+
+  .radio
+    display: block
+
+  // [type="file"]
+  //   margin-bottom: $small-spacing
+  //   width: 100%
+  //
+
+  &__btn
+    float: right
+    +omega
+
+  select
+    width: 100%
+    margin: 5px 0
+
+
+  &--with-border
+    background-color: $base-background-color
+    border-radius: 5px
+    box-shadow: $form-box-shadow
+    padding: 20px
+    margin-bottom: 20px
+
+  &__field
+    margin-bottom: $small-spacing
+
+  &__field--with-errors
+    .form__input
+      border: 1px solid $error-color
+
+    .form__error
+      color: $error-color
+      display: block
+
+  &__hint
+    color: tint($base-font-color, 40%)
+    display: block
+    font-size: $hint-font-size
+
+  .form__slug
+    +clearfix
+    &-prefix, &-input
+      float: left
+      width: auto
+      padding-left: 0
+    &-prefix
+      @extend .form__input:not(select)
+      display: block
+      border: none
+      box-shadow: none
+      padding-right: 0
+      font-weight: 700
+    &-input
+      max-width: 50%

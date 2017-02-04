@@ -1,0 +1,37 @@
+.footer
+  @extend .list
+  background: $base-background-color
+  padding: 20px 45px
+  margin: 50px 0 0
+  border-radius: 5px
+  box-shadow: $base-box-shadow
+
+  +media($mobile)
+    +span-columns(4)
+
+  a, &
+    color: $base-font-color
+    line-height: 2
+    font-size: em(15px)
+    font-weight: bold
+
+  &__item
+    text-align: left
+    &--left, &--right, &--center
+      +media($tablet)
+        +span-columns(4)
+
+    &--right
+      +media($mobile)
+        text-align: left
+      +media($tablet)
+        text-align: right
+      +omega
+
+    &--center
+      clear: both
+      +media($mobile)
+        text-align: left
+      +media($tablet)
+        text-align: center
+        +shift(2)

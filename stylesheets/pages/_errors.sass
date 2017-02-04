@@ -1,0 +1,17 @@
+.error-page
+  +media($mobile)
+    +span-columns(4)
+
+  &__image
+    +media($mobile)
+      display: none
+    +media($tablet)
+      +span-columns(2)
+      +shift(1)
+
+
+  &__content
+    +media($mobile)
+      +span-columns(4)
+    +media($tablet)
+      +span-columns(5)

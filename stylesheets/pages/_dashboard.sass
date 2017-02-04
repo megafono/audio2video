@@ -1,0 +1,129 @@
+.page-dashboard
+  +clearfix
+  background-color: #FFF
+  padding: em(20px) em(25px)
+  max-width: 2000px
+  margin: 0 auto
+
+  .nav
+    +media($desktop)
+      +span-columns(2)
+
+  h2
+    font-size: modular-scale(3)
+    font-weight: 700
+    border-bottom: 2px solid $dark-background-color
+    a
+      text-decoration: none
+
+  &__content h3
+    font-size: modular-scale(2)
+    font-weight: 700
+
+  &__content
+    +media($mobile)
+      +span-columns(4)
+
+    +media($desktop)
+      +span-columns(10)
+      +omega
+
+  &__view-all
+    font-size: em(20px)
+    display: block
+
+  &__overview, &__most-downloaded-episodes, &__latest-episodes
+    +clearfix
+    margin: $small-spacing 0 $small-spacing * 2.5
+    float: left
+    +media($mobile)
+      +span-columns(4)
+
+  &__most-downloaded-episodes, &__latest-episodes
+    +media($mobile)
+      +span-columns(4)
+
+    +media($tablet)
+      +span-columns(4)
+
+  &__episode
+    display: flex
+    justify-content: space-between
+    flex-flow: row nowrap
+    align-items: center
+
+  &__episode-title
+    flex: 1 1 auto
+
+  &__episode-link
+    padding: 0 0 0 em(20px)
+
+  &__episode-total-download
+    padding: em(5px) em(10px)
+    border-radius: 2px
+    background-color: lighten($action-color, 20%)
+
+  &__graph--line
+    +media($mobile)
+      +span-columns(4)
+
+  &__episode-actions, &__actions
+    padding: 0
+    margin: 0
+    margin-bottom: $small-spacing * 2
+    +media($mobile)
+      +span-columns(4)
+
+    li
+      display: block
+      overflow: hidden
+      padding-bottom: 20px
+
+  &__episode-action--delete, &__action--leave
+    color: $error-color
+
+  &__episode-action, &__action
+    font-size: em(18px)
+    font-weight: 700
+
+    &--facebook, &--twitter
+      color: $base-background-color
+      padding: 10px
+      display: block
+      float: left
+      text-decoration: none
+      font-size: em(15px)
+
+    &--facebook
+      background-color: $facebook-color
+    &--twitter
+      background-color: $twitter-color
+
+  &__action--publish
+    background-color: $accent-color
+    color: #FFF
+    padding: 10px
+    display: inline-block
+    &:hover
+      color: #EEE
+      background-color: lighten($accent-color, 5%)
+
+  &__episode-empty
+    font-weight: bold
+    font-size: 30px
+    text-align: center
+    overflow: hidden
+    +clearfix
+
+  &__customer-data, &__payments
+    +clearfix
+    margin-top: $small-spacing * 3
+    border-top: 1px dashed
+    padding-top: $small-spacing
+    form
+      margin-top: $small-spacing
+      width: 100%
+      clear: both
+      float: left
+
+

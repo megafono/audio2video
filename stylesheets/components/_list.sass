@@ -1,0 +1,27 @@
+.list
+  list-style-type: none
+  margin: 0
+  margin-bottom: 20px
+  padding: 0
+
+
+  &__item
+    padding-bottom: $small-spacing
+    border-bottom: 1px dashed $base-font-color
+    margin-bottom: $small-spacing
+    +clearfix
+
+  &__title
+    font-weight: 600
+    margin: 0
+    margin-bottom: $small-spacing / 3
+
+  &__tag
+    font-weight: 700
+    &::after
+      content: ":"
+
+  &__definition
+    font-style: italic
+    margin: 0 0 20px 25px
+    +clearfix

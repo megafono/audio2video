@@ -1,0 +1,74 @@
+.table
+  border-collapse: collapse
+  margin: $small-spacing 0
+  width: 100%
+
+  +media($mobile-only)
+    width: 100%
+    thead
+      display: none
+
+    tr:nth-of-type(2n)
+      background-color: inherit
+
+    tr td:first-child
+      background: #f0f0f0
+      font-weight: bold
+      font-size: 1.3em
+
+    tbody td
+      display: block
+      text-align: center
+
+    tbody td:before
+      content: attr(data-th)
+      display: block
+      text-align: center
+      font-weight: 700
+
+  +media($tablet)
+    overflow-x: none
+    display: table
+    table-layout: fixed
+
+  th
+    border-bottom: 1px solid shade($base-border-color, 25%)
+    font-weight: 600
+    padding: $small-spacing
+    text-align: left
+
+  td
+    border-bottom: $base-border
+    padding: $small-spacing
+
+
+  tr,
+  td,
+  th
+    vertical-align: middle
+
+  &__headline
+    text-align: right
+    width: 100%
+    border-bottom: 1px solid black
+    margin: 0
+    font-size: em(17px)
+    +clearfix
+
+  &__rigth, th.table__rigth
+    text-align: right
+
+  &__center, th.table__center
+    text-align: center
+
+  &__action
+    +clearfix
+    +media($tablet)
+      white-space: nowrap
+      margin: 0 auto
+      width: 150px
+
+    &.table__rigth .btn
+      +media($tablet)
+        float: right
+

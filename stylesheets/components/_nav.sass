@@ -1,0 +1,37 @@
+.nav
+  +clearfix
+  margin-bottom: 20px
+  &__items
+    list-style: none
+    margin: 0
+    padding: 0
+    font-weight: 700
+
+  &__title
+    margin: 0
+    font-weight: 700
+    +media($desktop)
+      display: none
+
+  &__item
+    border-bottom: 1px solid $dark-background-color
+
+  &__item--btn
+    border-bottom: none
+
+  &__link
+    display: block
+    text-decoration: none
+    color: $link-color
+    padding: em(10px) 0
+
+  &__btn
+    margin-top: em(15px)
+    @extend .btn
+    @extend .btn--full-width
+
+  &--active
+    color: $base-font-color
+    &:hover
+      color: $base-font-color
+      cursor: default

@@ -1,0 +1,27 @@
+.episodes.episodes-embed
+  overflow: hidden
+
+.embed
+  margin-top: 20px
+  margin-bottom: $small-spacing * 2
+
+.embed__title
+.embed__controls
+  +span-columns(4)
+
+.embed__control[name="width"], .embed__control[name="height"]
+  width: 85px
+  display: inline-block
+
+.embed__control + label
+  display: inline-block
+
+
+.embed__code
+  +span-columns(8)
+  +omega
+  height: 100px
+
+.embed__preview
+  margin: 0
+  border: 1px solid black
