@@ -1,5 +1,11 @@
 <div class="form-box form-box--small ballon--up">
   <%= simple_form_for(conversion, html: { class: 'form form--with-border' }) do |f| %>
+    <h2 class="form-box__title">Transforme seu episódio de podcast em um video</h2>
+    <p class="form-box__body">
+      Já pensou que publicar um video em redes socias como o youtube ou facebook com uma chamada ou mesmo o episódio inteiro do seu podcast pode <strong>ampliar o numero de ouvintes do seu canal</strong>?
+      <br />
+      Criamos e estamos testando essa ferramenta que te permite com duas URLs, uma do audio e outra de uma imagem, criar um video sem nenhum esforço, o video chega no seu email assim que terminamos o processamento dele.
+    </p>
     <%= f.input :audio_url %>
     <%= f.input :image_url %>
     <%= f.input :email %>
