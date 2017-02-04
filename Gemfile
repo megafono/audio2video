@@ -138,4 +138,3 @@ gem 'flipper-ui'
 
 gem 'postmark-rails'
 gem 'streamio-ffmpeg'
-gem 'delayed_job_active_record'

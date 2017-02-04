@@ -1,5 +1,10 @@
-<p id="notice"><%= notice %></p>
+<div class="form-box form-box--small ballon--up">
+  <div class="form form--with-border">
+    <div class="loader ball-scale-multiple"><div></div><div></div><div></div></div>
 
-<p>
-Estamos processando seu video, esse processo pode demorar alguns minutos, por isso, fique tranquilo, assim que estiver pronto enviaremos um email com o link de download.
-</p>
+    <p><strong>Estamos processando seu video</strong>,
+      esse processo pode demorar alguns minutos, por isso, fique tranquilo, <strong>assim que estiver pronto enviaremos um email</strong> com o link de download.</p>
+    <br />
+    <p>Caso tenha passado 1h e você ainda não recebeu o email, mande uma mensagem para <a href="mailto:emerson@megafono.io">emerson@megafono.io</a> com o código <strong>#<%= @conversion.id %></strong></p>
+  </div>
+</div>
