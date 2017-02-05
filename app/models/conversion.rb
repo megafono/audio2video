@@ -40,6 +40,7 @@ class Conversion < ApplicationRecord
     response = `curl -F "file=@#{movie_output_path}" https://file.io/?expires=1w`
     self.movie_url = JSON.parse(response)["link"]
     self.save!
+    self.uploaded!
   end
 
   def notify!
