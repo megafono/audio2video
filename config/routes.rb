@@ -7,5 +7,7 @@ Rails.application.routes.draw do
     end
   end
 
+  match "/delayed_job" => DelayedJobWeb, :anchor => false, :via => [:get, :post]
+
   root 'conversions#new'
 end
